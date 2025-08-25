@@ -1,0 +1,84 @@
+.App {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.App-header p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 0;
+  margin: 2rem 0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+.toggle-button {
+  padding: 12px 24px;
+  border: none;
+  background-color: white;
+  color: #666;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-right: 1px solid #e0e0e0;
+}
+
+.toggle-button:last-child {
+  border-right: none;
+}
+
+.toggle-button:hover {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.toggle-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.toggle-button.active:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .App-header h1 {
+    font-size: 2rem;
+  }
+  
+  .App-header p {
+    font-size: 1rem;
+  }
+  
+  main {
+    padding: 1rem 0.5rem;
+  }
+}
